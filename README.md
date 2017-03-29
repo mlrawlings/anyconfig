@@ -266,3 +266,4 @@ let eslintConfig = require('anyconfig').load({
 - directories: some configurations allow/require creating a directory specific to the project/tool and nest additional configuration files under that directory
 - local config that does not get checked into the git repo, specific to your machine
 - config validation
+- writing configuration: some tools (such as package managers) allow you to update their config by running commands.  it would be important that the tool know where your config is and what format you want it in.
