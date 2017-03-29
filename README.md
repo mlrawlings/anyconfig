@@ -20,7 +20,7 @@ _All my projects with config use package.json_ - [Sindre Sorhus](https://twitter
 
 ## Goals
 
-The goal of this project is to create a standard for configurations that will achieve mass adoption across languages and environments.  This means it will need to be quite flexible and meet existing projects where they are at: `anyconfig` should be able to replace the existing config setup for a project without requiring users to change their current configuration.
+The goal of this project is to create a standard for configurations that will achieve mass adoption across languages and environments.  This means it will need to be quite flexible and **meet existing projects where they are at**: `anyconfig` should be able to replace the existing config setup for a project without requiring users to change their current configuration.
 
 ## Targets
 - Tooling config (editorconfig, eslint, babel, etc.)

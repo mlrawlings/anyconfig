@@ -1,7 +1,7 @@
 {
   "name": "anyconfig",
   "version": "0.0.1",
-  "description": "> a standard for consistent configuration across multiple languages/libraries/environments.",
+  "description": "a standard for consistent configuration across multiple languages/libraries/environments",
   "main": "index.js",
   "directories": {
     "test": "test"
