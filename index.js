@@ -119,7 +119,7 @@ function getDefaultLoader(option) {
     throw new TypeError(
       "The defaultLoader option for anyconfig must be a function " +
         "or the name of one of the built in loaders: " +
-        parseNames.join(", ")
+        loaderNames.join(", ")
     );
   }
 
@@ -128,8 +128,8 @@ function getDefaultLoader(option) {
     if (!loader) {
       throw new Error(
         "The defaultLoader option for anyconfig must match " +
-          " the name of one of the built in loaders: " +
-          parseNames.join(", ")
+          "the name of one of the built in loaders: " +
+          loaderNames.join(", ")
       );
     }
     return loader;
@@ -153,7 +153,7 @@ function getDefaultLoader(option) {
 
     if (!result) {
       let error = new Error(
-        "Unable to load as " + options.split(",").join(" or ")
+        "Unable to load as " + option.split(",").join(" or ")
       );
       error.errors = errors;
       throw error;

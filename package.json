@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-cov": "nyc -asc npm run test",
+    "test-cov-report": "npm run test-cov && nyc report --reporter=html && open ./coverage/index.html"
   },
   "author": "Michael Rawlings <ml.rawlings@gmail.com>",
   "license": "MIT",
@@ -19,6 +21,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
+    "nyc": "^10.2.0",
+    "open": "0.0.5",
     "prettier": "^0.22.0"
   }
 }

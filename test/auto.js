@@ -24,8 +24,15 @@ groups.forEach(group => {
           "expected.js"
         ));
         const directory = getPath("autotests", group, test);
-        const config = getConfig(directory);
-        expect(config).to.eql(expectation);
+
+        if (expectation instanceof Error) {
+            let type = expectation.constructor;
+            let message = expectation.message;
+            expect(() => getConfig(directory)).to.throw(type, message);
+        } else {
+            const config = getConfig(directory);
+            expect(config).to.eql(expectation);
+        }
       });
     });
   });

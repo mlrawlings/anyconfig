@@ -4,6 +4,19 @@
 
 > **NEEDS DISCUSSION:** This is very much a work in progress  which I am coming from with node.js in mind as I develop the implementation alongside this standard.  Please open an issue with any questions, concerns or other feedback especially related to other languages and environments.
 
+## TL;DR
+
+anyconfig is both a standard and a companion library that can be easily used by any project.  
+
+**Backwards compatible:**
+anyconfig supports existing configuration files required by projects (`.eslintrc`, `.eslintignore` `webpack.config.js`, `Gruntfile.js`, `.editorconfig`, etc.)
+
+**Consistent structure:**
+Alternatively, anyconfig supports individual configuration files nested under a common directory (for example, `.config/eslint.json`) or in an aggregate file (for example, `config.yml`). Putting config keys in `package.json` is also supported.
+
+**Consistent language:**
+anyconfig supports a number of data formats (`json`, `yaml`, `js`, etc.) for any config file.
+
 ## We Have a Problem
 
 _The number of config files per repo is slowly but surely overtaking the number of code files._ - [Kevin Suttle](http://kevinsuttle.com/posts/propelling-dx-through-config)
