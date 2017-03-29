@@ -1,0 +1,2 @@
+# not actually needed because it's there by default
+node_modules # don't lint modules

@@ -1,0 +1,24 @@
+{
+  "name": "anyconfig",
+  "version": "0.0.1",
+  "description": "> a standard for consistent configuration across multiple languages/libraries/environments.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Michael Rawlings <ml.rawlings@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^3.8.2",
+    "properties": "^1.2.1",
+    "try-require": "^1.2.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "prettier": "^0.22.0"
+  }
+}
